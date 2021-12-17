@@ -24,12 +24,12 @@ A simple Laravel 5 wrapper for the [official WooCommerce REST API PHP Library](h
 
 ### Step 1: Install Through Composer
 
-For API Version v2, WooCommerce 3.0+, Wordpress 4.4+, php 7.0+, Laravel 5.5+ use the v3.x branch
+For API Version v2, WooCommerce 3.0+, WordPress 4.4+, php 7.0+, Laravel 5.5+ use the v3.x branch
 ``` bash
 composer require pixelpeter/laravel5-woocommerce-api-client ^3.0
 ```
 
-For API Version v1, WooCommerce 2.6+, Wordpress 4.4+, Laravel 5.4+ use the v2.x branch
+For API Version v1, WooCommerce 2.6+, WordPress 4.4+, Laravel 5.4+ use the v2.x branch
 ``` bash
 composer require pixelpeter/laravel5-woocommerce-api-client ^2.0
 ```
@@ -67,7 +67,7 @@ php artisan vendor:publish --provider="Pixelpeter\Woocommerce\WoocommerceService
 ### Step 5: Customize configuration
 You can directly edit the configuration in `config/woocommerce.php` or copy these values to your `.env` file.
 ```php
-WOOCOMMERCE_STORE_URL=http://example.org
+WOOCOMMERCE_STORE_URL=https://example-store.org
 WOOCOMMERCE_CONSUMER_KEY=ck_your-consumer-key
 WOOCOMMERCE_CONSUMER_SECRET=cs_your-consumer-secret
 WOOCOMMERCE_VERIFY_SSL=false
@@ -212,15 +212,31 @@ Woocommerce::getResponse();
 Woocommerce::getResponse()->getHeaders()['X-WP-Total']
 ```
 
-
 ### More Examples
-Refer to [WooCommerce REST API Documentation](https://woocommerce.github.io/woocommerce-rest-api-docs) for more examples and documention.
+Refer to [WooCommerce REST API Documentation](https://woocommerce.github.io/woocommerce-rest-api-docs) for more examples and documentation.
 
 ## Testing
-Run the tests with:
+
 ```bash
-vendor/bin/phpunit
+composer test
 ```
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
+
+## Security Vulnerabilities
+
+Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+
+## Credits
+
+- [palPalani](https://github.com/palpalani)
+- [All Contributors](../../contributors)
 
 ## License
 
