@@ -1,4 +1,6 @@
-<?php namespace Pixelpeter\Woocommerce;
+<?php
+
+namespace Pixelpeter\Woocommerce;
 
 use Automattic\WooCommerce\Client;
 use Illuminate\Support\ServiceProvider;
@@ -41,7 +43,7 @@ class WoocommerceServiceProvider extends ServiceProvider
 
         $config = $app['config']->get('woocommerce');
 
-        $app->singleton('woocommerce.client', function() use ($config) {
+        $app->singleton('woocommerce.client', function () use ($config) {
             return new Client(
                 $config['store_url'],
                 $config['consumer_key'],
@@ -52,10 +54,11 @@ class WoocommerceServiceProvider extends ServiceProvider
                     'wp_api' => $config['wp_api'],
                     'query_string_auth' => $config['query_string_auth'],
                     'timeout' => $config['timeout'],
-                ]);
+                ]
+            );
         });
 
-        $app->singleton('Pixelpeter\Woocommerce\WoocommerceClient', function($app) {
+        $app->singleton('Pixelpeter\Woocommerce\WoocommerceClient', function ($app) {
             return new WoocommerceClient($app['woocommerce.client']);
         });
 

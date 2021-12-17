@@ -1,4 +1,6 @@
-<?php namespace Pixelpeter\Woocommerce;
+<?php
+
+namespace Pixelpeter\Woocommerce;
 
 use Automattic\WooCommerce\Client;
 
@@ -118,7 +120,7 @@ class WoocommerceClient
      */
     public function currentPage()
     {
-        return !empty($this->getRequest()->getParameters()['page']) ? $this->getRequest()->getParameters()['page'] : 1;
+        return ! empty($this->getRequest()->getParameters()['page']) ? $this->getRequest()->getParameters()['page'] : 1;
     }
 
     /**
@@ -200,7 +202,7 @@ class WoocommerceClient
      */
     public function hasNotNextPage()
     {
-        return (bool)!$this->nextPage();
+        return (bool)! $this->nextPage();
     }
 
     /**
@@ -210,6 +212,6 @@ class WoocommerceClient
      */
     public function hasNotPreviousPage()
     {
-        return (bool)!$this->previousPage();
+        return (bool)! $this->previousPage();
     }
 }
