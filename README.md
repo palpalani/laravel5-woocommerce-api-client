@@ -6,7 +6,6 @@
 [![Scrutinizer Quality](https://img.shields.io/scrutinizer/g/pixelpeter/laravel5-woocommerce-api-client.svg?style=flat-square)](https://scrutinizer-ci.com/g/pixelpeter/laravel5-woocommerce-api-client)
 [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/pixelpeter/laravel5-woocommerce-api-client.svg?style=flat-square)](https://scrutinizer-ci.com/g/pixelpeter/laravel5-woocommerce-api-client)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/edfbddc6-ccbc-425c-9db8-726a5bc371e7.svg?style=flat-square)](https://insight.sensiolabs.com/projects/edfbddc6-ccbc-425c-9db8-726a5bc371e7)
-[![Total Downloads](https://img.shields.io/packagist/dt/pixelpeter/laravel5-woocommerce-api-client.svg?style=flat-square)](https://packagist.org/packages/pixelpeter/laravel5-woocommerce-api-client)
 [![Coverage Status](https://coveralls.io/repos/github/pixelpeter/laravel5-woocommerce-api-client/badge.svg?branch=master)](https://coveralls.io/github/pixelpeter/laravel5-woocommerce-api-client?branch=master)
 
 A simple Laravel 5 wrapper for the [official WooCommerce REST API PHP Library](https://github.com/woothemes/wc-api-php) from Automattic.
