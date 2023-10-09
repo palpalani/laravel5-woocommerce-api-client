@@ -18,25 +18,29 @@ A simple Laravel wrapper for the [official WooCommerce REST API PHP Library](htt
 
 ## Installation
 
-### Step 1: Install through Composer
+### Step 1: Install using Composer
 
-For API Version v2, WooCommerce 3.0+, WordPress 5.5+, php 7.0+, Laravel 9.0+ use the v3.x branch
+For API Version v2, WooCommerce 3.0+, WordPress 5.5+, php 7.4+, Laravel 9.0+ use the v3.x branch
+
 ``` bash
 composer require pixelpeter/laravel5-woocommerce-api-client ^3.0
 ```
 
 For API Version v1, WooCommerce 2.6+, WordPress 4.4+, Laravel 5.4+ use the v2.x branch
+
 ``` bash
 composer require pixelpeter/laravel5-woocommerce-api-client ^2.0
 ```
 
 For older versions of Woocommerce starting from 2.1+ use the v1.x branch
+
 ``` bash
 composer require pixelpeter/laravel5-woocommerce-api-client ^1.0
 ```
 
 ### Step 2: Add the Service Provider (not needed with v3.x)
 Add the service provider in `app/config/app.php`
+
 ```php
 'provider' => [
     ...
@@ -47,6 +51,7 @@ Add the service provider in `app/config/app.php`
 
 ### Step 3: Add the Facade (not needed with v3.x)
 Add the alias in `app/config/app.php`
+
 ```php
 'aliases' => [
     ...
@@ -56,12 +61,14 @@ Add the alias in `app/config/app.php`
 ```
 
 ### Step 4: Publish configuration
+
 ``` bash
 php artisan vendor:publish --provider="Pixelpeter\Woocommerce\WoocommerceServiceProvider"
 ```
 
 ### Step 5: Customize configuration
 You can directly edit the configuration in `config/woocommerce.php` or copy these values to your `.env` file.
+
 ```php
 WOOCOMMERCE_STORE_URL=https://example-store.org
 WOOCOMMERCE_CONSUMER_KEY=ck_your-consumer-key
@@ -76,6 +83,7 @@ WOOCOMMERCE_WP_TIMEOUT=15
 ## Examples
 
 ### Get the index of all available endpoints
+
 ```php
 use Woocommerce;
 
@@ -83,6 +91,7 @@ return Woocommerce::get('');
 ```
 
 ### View all orders
+
 ```php
 use Woocommerce;
 
@@ -149,6 +158,7 @@ foreach($orders as $order)
 ```
 
 ### Update a product
+
 ```php
 use Woocommerce;
 
