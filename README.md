@@ -10,6 +10,7 @@ A simple Laravel wrapper for the [official WooCommerce REST API PHP Library](htt
 
 | Laravel | wc-api-php used | Wordpress |  Woocommerce  |          WC API version           | use branch |
 | ------  | --------------- | --------- | ------------- | --------------------------------- | ---------- |
+| 10.0+   | 3.x             | 6.0+      | 3.5+          | v1, v2, v3                        | w.i.p.     | 
 | 9.0+    | 2.x             | 5.5+      | 3.5+          | v1, v2, v3                        | w.i.p.     |  
 | 5.7+    | 2.x             | 4.4+      | 3.5+          | v1, v2, v3                        | w.i.p.     |
 | 5.5+    | 1.3.x           | 4.4+      | 3.0 - 3.4.x   | v1, v2, v3                        | ^3.0       |
