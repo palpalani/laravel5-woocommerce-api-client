@@ -10,6 +10,7 @@ A simple Laravel wrapper for the [official WooCommerce REST API PHP Library](htt
 
 | Laravel | wc-api-php used | Wordpress |  Woocommerce  |          WC API version           | use branch |
 | ------  | --------------- | --------- | ------------- | --------------------------------- | ---------- |
+| 11.0+   | 3.x             | 6.0+      | 6.5+          | v3                                | w.i.p.     | 
 | 10.0+   | 3.x             | 6.0+      | 3.5+          | v1, v2, v3                        | w.i.p.     | 
 | 9.0+    | 2.x             | 5.5+      | 3.5+          | v1, v2, v3                        | w.i.p.     |  
 | 5.7+    | 2.x             | 4.4+      | 3.5+          | v1, v2, v3                        | w.i.p.     |
@@ -21,7 +22,7 @@ A simple Laravel wrapper for the [official WooCommerce REST API PHP Library](htt
 
 ### Step 1: Install using Composer
 
-For API Version v2, WooCommerce 3.0+, WordPress 5.5+, php 7.4+, Laravel 9.0+ use the v3.x branch
+For API Version v3, WooCommerce 6.5+, WordPress 6.0+, php 7.4+, Laravel 10.0+ use the v3.x branch
 
 ``` bash
 composer require pixelpeter/laravel5-woocommerce-api-client ^3.0
